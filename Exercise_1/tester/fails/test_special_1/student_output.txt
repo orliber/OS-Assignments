@@ -10,6 +10,42 @@ Metadata from PGN file:
 [BlackElo "2567"]
 [EventDate "2024.05.03"]
 [ECO "C65"]
-illegal san: 'Ng3h6' in r1br1nk1/1pp1qppp/5n2/pBb1p3/P3P3/2P2N1P/1PQ2PP1/R1B1RNK1 w - - 5 14 while parsing <Game at 0x7fc69fa4bf40 ('?' vs. '?', '????.??.??' at '?')>
-e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 f8c5 c2c3 d7d5 b1d2 d5e4 d3e4 e8g8 e1g1 a7a5 d1c2 d8e7 a2a4 f8d8 h2h3 c6b8 f1e1 b8d7 d2f1 d7f8
+illegal san: 'Ng3h6' in r1br1nk1/1pp1qppp/5n2/pBb1p3/P3P3/2P2N1P/1PQ2PP1/R1B1RNK1 w - - 5 14 while parsing <Game at 0x7efffdcbff40 ('?' vs. '?', '????.??.??' at '?')>
+Move 0/26
+  a b c d e f g h
+8 r n b q k b n r 8
+7 p p p p p p p p 7
+6 . . . . . . . . 6
+5 . . . . . . . . 5
+4 . . . . . . . . 4
+3 . . . . . . . . 3
+2 P P P P P P P P 2
+1 R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
+  a b c d e f g h
+8 r . b . . n k r 8
+7 . p p . q p p p 7
+6 . . . . . n . . 6
+5 p B b . p . . . 5
+4 P . . . P . . . 4
+3 . . P . . N . P 3
+2 . P Q . . P P . 2
+1 R . B . . N K R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
+  a b c d e f g h
+8 r . b . . n k r 8
+7 . p p . q p p p 7
+6 . . . . . n . . 6
+5 p B b . p . . . 5
+4 P . . . P . . . 4
+3 . . P . . N . P 3
+2 . P Q . . P P . 2
+1 R . B . . N K R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: n
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: No more moves available.
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: No more moves available.
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Exiting.
 End of game.

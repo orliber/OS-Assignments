@@ -1,1 +1,374 @@
-./tester.sh: ./chess_sim.sh: /bin/bash^M: bad interpreter: No such file or directory
+Metadata from PGN file:
+[Event "New York"]
+[Site "New York"]
+[Date "1983.??.??"]
+[Round "9"]
+[White "Alburt, Lev O"]
+[Black "Quinteros, Miguel A"]
+[Result "1/2-1/2"]
+[WhiteElo "2560"]
+[BlackElo "2515"]
+[ECO "A40"]
+Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: i
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: k
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: y
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: No more moves available.
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: k
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: u
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: f
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . . . . . . 4
+. . . . . . . . 3
+P P P P P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 1/1
+  a b c d e f g h
+r n b q k b n r 8
+p p p p p p p p 7
+. . . . . . . . 6
+. . . . . . . . 5
+. . . P . . . . 4
+. . . . . . . . 3
+P P P . P P P P 2
+R N B Q K B N R 1
+  a b c d e f g h
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: 
+Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Exiting.
+End of game.
