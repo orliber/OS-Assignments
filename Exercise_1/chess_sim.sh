@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Normalize line endings to Unix-style
-dos2unix -n "$pgn_file" "$pgn_file" 2>/dev/null
+# Ensure the file is in Unix format before processing
+dos2unix -n "$1" "$1" 2>/dev/null
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 path_to_pgn_file"
