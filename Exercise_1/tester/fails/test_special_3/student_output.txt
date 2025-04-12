@@ -10,7 +10,7 @@ Metadata from PGN file:
 [BlackElo "2604"]
 [EventDate "2024.05.03"]
 [ECO "B90"]
-illegal san: 'Nxc6b' in r1bq1rk1/1p2ppb1/p1np1n1p/8/3NP1pP/2N3B1/PPP1BPP1/R2Q1RK1 w - - 2 14 while parsing <Game at 0x7fc8c02b7f40 ('?' vs. '?', '????.??.??' at '?')>
+illegal san: 'Nxc6b' in r1bq1rk1/1p2ppb1/p1np1n1p/8/3NP1pP/2N3B1/PPP1BPP1/R2Q1RK1 w - - 2 14 while parsing <Game at 0x7f6d4082bf40 ('?' vs. '?', '????.??.??' at '?')>
 Move 0/26
   a b c d e f g h
 8 r n b q k b n r 8

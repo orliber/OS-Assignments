@@ -88,9 +88,16 @@ void mkdir_p(const char *path) {
 int main(int argc, char *argv[]) {
     // Argument validation
     if (argc != 3) {
+        char cwd[MAX_PATH];
+        if (getcwd(cwd, sizeof(cwd)) != NULL) {
+            printf("Current working directory: %s\n", cwd);
+        } else {
+            perror("getcwd failed");
+        }
         printf("Usage: file_sync <source_directory> <destination_directory>\n");
         return 1;
     }
+    
 
     char abs_src[MAX_PATH], abs_dst[MAX_PATH];
     if (realpath(argv[1], abs_src) == NULL) {
