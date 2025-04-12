@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Convert the input PGN file to Unix format silently
+# Convert the input PGN file to Unix format silently (remove Windows line endings)
 dos2unix -n "$1" "$1" 2>/dev/null
 
 # Ensure exactly one argument (the PGN file path) is provided
@@ -11,145 +11,136 @@ fi
 
 pgn_file="$1"
 
-# Check if the file exists
+# Validate that the PGN file exists
 if [ ! -f "$pgn_file" ]; then
     echo "Error: File '$pgn_file' does not exist."
     exit 1
 fi
 
-# Check if the file has a .pgn extension
+# Ensure file has a .pgn extension
 if [ "${pgn_file##*.}" != "pgn" ]; then
     echo "Error: File '$pgn_file' is not a PGN file."
     exit 1
 fi
 
-# Check if the file is not empty
+# Ensure the file is not empty
 if [ ! -s "$pgn_file" ]; then
     echo "Error: File '$pgn_file' is empty."
     exit 1
 fi
 
-# Print the PGN metadata (lines starting with [ )
+# Print PGN metadata (lines starting with [ )
 echo "Metadata from PGN file:"
 grep "^\[" "$pgn_file"
 
-# Extract the move section (all non-metadata lines)
+# Extract move section (removing metadata)
 pgn_moves=$(grep -v "^\[" "$pgn_file" | tr -d '\n')
 
-# Convert PGN moves to UCI format using the provided Python script
-uci_output=$(python3 parse_moves.py "$pgn_moves")
+# Convert PGN moves to UCI format using parse_moves.py and remove invalid lines
+uci_output=$(python3 parse_moves.py "$pgn_moves" 2>/dev/null | grep -v "illegal san")
 
-# Store UCI moves into a Bash array
+# If the output is empty, parsing failed
+if [[ -z "$uci_output" ]]; then
+    echo "Error: Failed to parse PGN moves."
+    exit 1
+fi
+
+# Convert UCI string into a Bash array
 IFS=' ' read -r -a all_moves <<< "$uci_output"
-total_moves=${#all_moves[@]}
-current_index=0
+total_moves=${#all_moves[@]}      # Total number of moves
+current_index=0                   # Start from move 0
 
-# Declare an associative array for the board
-declare -A board
+# Array to store FEN (board position snapshots) for each move
+declare -a fen_snapshots
 
-# Initialize the chessboard with the starting position
-init_board() {
-    board=()
-    for file in a b c d e f g h; do
-        board["${file}2"]="P"   # White pawns
-        board["${file}7"]="p"   # Black pawns
-    done
-    # White pieces
-    board[a1]="R"; board[b1]="N"; board[c1]="B"; board[d1]="Q"
-    board[e1]="K"; board[f1]="B"; board[g1]="N"; board[h1]="R"
-    # Black pieces
-    board[a8]="r"; board[b8]="n"; board[c8]="b"; board[d8]="q"
-    board[e8]="k"; board[f8]="b"; board[g8]="n"; board[h8]="r"
+# Function to generate the board state (FEN) after n moves using python-chess
+get_fen_after_n_moves() {
+    python3 -c "
+import chess
+board = chess.Board()
+moves = '${all_moves[*]}'.split()
+for move in moves[:$1]:
+    board.push_uci(move)  # Apply move
+print(board.board_fen())  # Output FEN of board state
+" 2>/dev/null
 }
 
-# Print the current state of the chessboard
-print_board() {
-    echo "  a b c d e f g h"
-    for ((rank = 8; rank >= 1; rank--)); do
+# Pre-compute all board states from 0 to total_moves
+for ((i = 0; i <= total_moves; i++)); do
+    fen_snapshots[$i]=$(get_fen_after_n_moves "$i")
+done
+
+# Function to print a chessboard from a FEN string (only the piece layout part)
+print_board_from_fen() {
+    fen="$1"
+    echo "  a b c d e f g h"  # Top file labels
+    rank=8
+    for row in $(echo "$fen" | tr '/' ' '); do
         echo -n "$rank "
-        for file in a b c d e f g h; do
-            piece="${board[$file$rank]:-.}"
-            echo -n "$piece "
+        for ((i=0; i<${#row}; i++)); do
+            ch="${row:$i:1}"
+            if [[ "$ch" =~ [0-9] ]]; then
+                for ((j=0; j<ch; j++)); do echo -n ". "; done  # Print empty squares
+            else
+                echo -n "$ch "  # Print piece character
+            fi
         done
         echo "$rank"
+        ((rank--))
     done
-    echo "  a b c d e f g h"
+    echo "  a b c d e f g h"  # Bottom file labels
 }
 
-# Apply a single move in UCI format
-apply_move() {
-    from=${1:0:2}
-    to=${1:2:2}
-    board[$to]="${board[$from]}"
-    unset board[$from]
-}
-
-# Apply all moves up to the current index to rebuild board state
-apply_moves_up_to_index() {
-    init_board
-    for ((i = 0; i < current_index; i++)); do
-        apply_move "${all_moves[$i]}"
-    done
-}
-
-# Initial board setup and print
-apply_moves_up_to_index
+# Print the initial board state
 echo "Move $current_index/$total_moves"
-print_board
+print_board_from_fen "${fen_snapshots[$current_index]}"
 echo -n "Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: "
 
-# Main input loop to handle user navigation
+# Main interactive loop - waits for user key press
 while true; do
+    # Repeat prompt if user typed something
     if [[ "$key" != "" && "$key" != " " ]]; then
         echo -n "Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: "
     fi
-    if ! IFS= read -rsn1 key; then
-        key=""
-    fi
+
+    # Read a single keypress (non-blocking)
+    if ! IFS= read -rsn1 key; then key=""; fi
+
     case "$key" in
-        d)  # Move forward
+        d)  # Move forward one move
             if [ "$current_index" -lt "$total_moves" ]; then
-                current_index=$((current_index + 1))
-                apply_moves_up_to_index
-                printf "Move %d/%d\n" "$current_index" "$total_moves"
-                print_board
+                ((current_index++))
+                echo "Move $current_index/$total_moves"
+                print_board_from_fen "${fen_snapshots[$current_index]}"
             else
-                echo -n "No more moves available."
-                echo
+                echo "No more moves available."
             fi
             ;;
-        a)  # Move backward
+        a)  # Move backward one move
             if [ "$current_index" -gt 0 ]; then
-                current_index=$((current_index - 1))
+                ((current_index--))
             fi
-            apply_moves_up_to_index
-            printf "Move %d/%d\n" "$current_index" "$total_moves"
-            print_board
+            echo "Move $current_index/$total_moves"
+            print_board_from_fen "${fen_snapshots[$current_index]}"
             ;;
         w)  # Go to start of game
             current_index=0
-            apply_moves_up_to_index
-            printf "Move %d/%d\n" "$current_index" "$total_moves"
-            print_board
+            echo "Move $current_index/$total_moves"
+            print_board_from_fen "${fen_snapshots[$current_index]}"
             ;;
         s)  # Go to end of game
             current_index=$total_moves
-            apply_moves_up_to_index
-            printf "Move %d/%d\n" "$current_index" "$total_moves"
-            print_board
+            echo "Move $current_index/$total_moves"
+            print_board_from_fen "${fen_snapshots[$current_index]}"
             ;;
-        q)  # Quit the game
-            echo -n "Exiting."
-            echo
+        q)  # Quit the simulator
+            echo "Exiting."
             echo "End of game."
             break
             ;;
-        *)  # Invalid key press
+        *)  # Handle invalid keys
             if [[ "$key" != "" && "$key" != " " ]]; then
-                echo -n "Invalid key pressed: $key"
-                echo
-            else
-                echo -n
+                echo "Invalid key pressed: $key"
             fi
             ;;
     esac

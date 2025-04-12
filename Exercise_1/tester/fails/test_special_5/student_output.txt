@@ -10,7 +10,6 @@ Metadata from PGN file:
 [BlackElo "2598"]
 [EventDate "2024.05.03"]
 [ECO "D35"]
-illegal san: 'Nf4B' in r2qr1k1/3nbpp1/b1p2n1p/pp1p4/3P4/2NBPP2/PP2NBPP/2RQ1RK1 w - - 2 14 while parsing <Game at 0x7ffa46813f40 ('?' vs. '?', '????.??.??' at '?')>
 Move 0/26
   a b c d e f g h
 8 r n b q k b n r 8
@@ -146,14 +145,14 @@ Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go t
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/26
   a b c d e f g h
@@ -214,36 +213,36 @@ Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go t
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 25/26
   a b c d e f g h
-8 r . b q . . k r 8
+8 r . b q r . k . 8
 7 . . . n b p p . 7
 6 . . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 0/26
   a b c d e f g h
@@ -258,94 +257,94 @@ Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go t
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 25/26
   a b c d e f g h
-8 r . b q . . k r 8
+8 r . b q r . k . 8
 7 . . . n b p p . 7
 6 . . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: o
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: l
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Invalid key pressed: h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 25/26
   a b c d e f g h
-8 r . b q . . k r 8
+8 r . b q r . k . 8
 7 . . . n b p p . 7
 6 . . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Move 26/26
   a b c d e f g h
-8 r . . q . . k r 8
+8 r . . q r . k . 8
 7 . . . n b p p . 7
 6 b . p . . n . p 6
 5 p p . p . . . . 5
 4 . . . P . . . . 4
 3 . . N B P P . . 3
 2 P P . . N B P P 2
-1 . . R Q . . K R 1
+1 . . R Q . R K . 1
   a b c d e f g h
 Press 'd' to move forward, 'a' to move back, 'w' to go to the start, 's' to go to the end, 'q' to quit: Exiting.
 End of game.
